@@ -5,9 +5,10 @@ import java.util.Map;
 
 public class DepoUrunListesi {
     private static Map<Integer, UrunTanimlama> urunler = new HashMap<>();
+
     // urunler diye bir konteynir olusturdum. Ki id ve valio olarakta UrunTanimlama
     // id urunun tipini tutuyor
-    protected  static Map<Integer, UrunTanimlama> depodakiUrunler() {
+    protected static Map<Integer, UrunTanimlama> depodakiUrunler() {
 
         UrunTanimlama urun = new UrunTanimlama("E5", "Samsung", "Cep Telefonu", 10, "Tuslu Telefon");
         urunler.put(100, urun);

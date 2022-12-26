@@ -6,7 +6,7 @@ public class UrunGirisi {
 
     public UrunGirisi() {
         Scanner input = new Scanner(System.in);
-        boolean dogruSecim =false;
+        boolean dogruSecim = false;
         do {
             System.out.println("Yeni urun giris icin \"1\" Rafa urun eklemek icin \"2\" ye basiniz");
             int secim = input.nextInt();

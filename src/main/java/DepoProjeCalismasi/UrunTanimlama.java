@@ -94,6 +94,26 @@ public class UrunTanimlama {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //    public static void urunListeleme() {
 //        System.out.printf("%-20s %-19s %-19s %-19s %-19s %-15s\n", "id", "UrunIsmi", "Uretici", "Miktar", "Birim", "Raf");
 //        System.out.println("-".repeat(120));
