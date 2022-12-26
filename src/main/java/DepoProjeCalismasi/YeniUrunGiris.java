@@ -10,11 +10,15 @@ public class YeniUrunGiris {
 
         do {   // urun girisi yapabilmek icin kullanicidan bilgileri almamiz lazim
             yeniUrun();
-            System.out.println("Urun eklemeye devam etmek icin 1'e \n Anasayfaya donmek icin herhangi bir tusa basiniz...");
-            int secim = input.nextInt();
+            System.out.println("Urun eklemeye devam etmek icin 1'e  bit üst menüye dönmek için 2 ye\n Anasayfaya donmek icin herhangi bir tusa basiniz...");
+            String secim = input.next();
 
-            if(secim==1){
-                urunGirisi();  // urun girisi metodunu cagiriyoruz...
+            if(secim.equalsIgnoreCase("1")){
+                urunGirisi();
+                // urun girisi metodunu cagiriyoruz...
+            } else if(secim.equalsIgnoreCase("2")){
+                new UrunGirisi();
+
             }else {
                 DepoKarsilama.depoKarsilamaSayfasi();
                 break;

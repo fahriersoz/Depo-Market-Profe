@@ -11,35 +11,32 @@ public class DepoKarsilama extends DepoUrunListesi{  //Depo urun list. ile exten
         System.err.println("\t\t\t\t\t#  DEPO ANASAYFA  #");
         System.out.println("-------------------------------------------------------------");
 
-        System.out.println("||============ DEPO ANASAYFA ===============||");
-        System.out.println(" 1. Urun Tanimlama\n" + " " +
-                "2. Urun Rafa Koy\n" + " " +
-                "3. Urun Giris\n" + " " +
-                "4. Urun Cikis\n" + " " +
-                "5. Urun Listesi\n" + " " +
-                "6. Cıkıs\n" + "Yapmak istediginiz islemin numarasini giriniz: ");
-        System.out.println("------------------------------------------------");
+        System.out.println(
+                " 1. Urun Giris\n" + " " +
+                "2. Urun Cikis\n" + " " +
+                "3. Urun Listesi\n" + " " +
+                "4. Cıkıs\n" +
+                        "------------------------------------------------"+
+                        "\nYapmak istediginiz islemin numarasini giriniz: ");
+
 
         int secim = input.nextInt();
 
         switch (secim) {
             case 1:
-                UrunTanimlama.urunBilgileriAl();
+              new UrunGirisi();
                 break;
             case 2:
-                RafaUrunKoyma.urunRafaKoy();
-                break;
-            case 3:
-                YeniUrunGiris.urunGirisi();
-                break;
-            case 4:
                 UrunCikis.urunCikisi();
                 break;
-            case 5:
+            case 3:
                 UrunListesi.urunListe();
                 break;
-            case 6:
+            case 4:
+                System.out.println("Çıkış Yaptınız!!!");
                 System.exit(0);
+                break;
+
             default:
                 System.err.println("Gecerli Bir Secim Yapiniz !");
                 depoKarsilamaSayfasi();
