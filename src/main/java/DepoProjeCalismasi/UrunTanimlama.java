@@ -47,9 +47,9 @@ public class UrunTanimlama {
 
         do {    // kullanici surekli urun girinceye kadar donecek sonrada 2 girince Anasayfaya gonderecek
             System.out.println("Urun Eklemeye devam etmek icin 1'e \nAnasayfaya donmek icin 2'ye basiniz");
-            int secim = input.nextInt();  // sikinti olursa String yapmam lazim
-            if (secim == 1) {  // ekuls
-                urunBilgileriAl();  // Urun girerken bir ust yukaridaki metodu buraya koyduk ki surekli donerken kullansin
+            int secim = input.nextInt();            // sikinti olursa String yapmam lazim
+            if (secim == 1) {            // ekuls
+                urunBilgileriAl();       // Urun girerken bir ust yukaridaki metodu buraya koyduk ki surekli donerken kullansin
                 break;
             } else if (secim == 2) {
                 DepoKarsilama.depoKarsilamaSayfasi();
@@ -65,7 +65,7 @@ public class UrunTanimlama {
 
         return urunler;
     }
-    
+
     public static Integer getId() {
 
         return id;
@@ -93,3 +93,12 @@ public class UrunTanimlama {
         this.raf = raf;
     }
 }
+
+//    public static void urunListeleme() {
+//        System.out.printf("%-20s %-19s %-19s %-19s %-19s %-15s\n", "id", "UrunIsmi", "Uretici", "Miktar", "Birim", "Raf");
+//        System.out.println("-".repeat(120));
+//        for (Map.Entry<String, UrunlerPojo> w : urunDetaylari) {
+//            String key = w.getKey();
+//            System.out.printf("%-20s %-19s %-19s %-19s %-19s %-15s\n", key, urunlerListesi.get(key).getUrunIsmi(), urunlerListesi.get(key).getUretici(),
+//                    urunlerListesi.get(key).getMiktar(), urunlerListesi.get(key).getBirim(), urunlerListesi.get(key).getRaf());
+//        }

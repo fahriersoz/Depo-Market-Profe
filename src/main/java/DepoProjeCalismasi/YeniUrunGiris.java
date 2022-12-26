@@ -7,6 +7,7 @@ public class YeniUrunGiris {
     public static void urunGirisi() {
         System.err.println(" # Urun Giris Sayfasi #");
 
+
         do {   // urun girisi yapabilmek icin kullanicidan bilgileri almamiz lazim
             yeniUrun();
             System.out.println("Urun eklemeye devam etmek icin 1'e \n Anasayfaya donmek icin herhangi bir tusa basiniz...");

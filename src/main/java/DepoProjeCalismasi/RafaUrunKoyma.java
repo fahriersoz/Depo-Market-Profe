@@ -20,9 +20,9 @@ public class RafaUrunKoyma {
             if (urunId.contains(id)) {
                 rafaUrunKoyma(obje);
                 System.out.println("Rafa Koymaya devam etmek icin 1'e \n Anasayfaya donmek icin herhangi bir tusa basiniz...");
-                int secim = input.nextInt();
+                String secim = input.next();
 
-                if (secim == 1) {
+                if (secim.equalsIgnoreCase("1")) {
                     urunRafaKoy();
                 } else {
                     DepoKarsilama.depoKarsilamaSayfasi();
